@@ -37,43 +37,110 @@
 
                 <label for="email">Email Address:</label>
                 <input type="email" name="email" id="email" placeholder="JaneSmith123@hotmail.com">
+                <br>
 
             </form>
+            <br>
 
         </section>
 
 
 
-        <section></section>
-        <h3> Enter Check- In Date</h3>
-        <form id="check-in">
+        <section>
+            <h3> Enter Check- In Date</h3>
+            <form id="check-in">
 
-            <label for="chooseDate">Check-In Date:</label>
-            <input type="date" name="chooseDate" id="chooseDate"  min="2023-11-01"  />
+                <label for="chooseDate">Check-In Date:</label>
+                <input type="date" name="chooseDate" id="chooseDate" min="2023-11-01" />
+                <br>
 
-            <!-- create if statements based on chosen month that will calculate rate-->
-        </form>
+                <!-- create if statements based on chosen month that will calculate rate-->
+            </form>
+            <br>
+        </section>
 
         <section>
             <h3>Enter Number of Nights (1-28)</h3>
             <form id="numberOfNights">
                 <label for="nights">x:</label>
                 <input type="number" name="nights" id="nights" min="1" max="28">
+                <br>
 
 
             </form>
 
         </section>
 
+        <section id="roomType">
+            <br>
+            <h3>Select Room Type</h3>
 
-        <!-- allow user to enter number between 1-28. If user enters number outside of paramters, return error message -->
-        <!-- drop down menu with options 1-28 -->
-        <section id="roomType"></section>
-        <!-- provide radio buttons for Queen, King, 2-Bedroom Suite -->
-        <section id="adultsAndChildren"></section>
-        <!-- 2 drop down menus for number of adults (1-4) and number of children (0-4)  -->
-        <section id="discounts"></section>
-        <!-- radio buttons that specify: None, AAA/Senior (10%), and Military (20%) -->
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Queen
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    King
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    2-Bedroom Suite
+                </label>
+            </div>
+            <br>
+
+        </section>
+
+
+        <section>
+            <!-- 2 drop down menus for number of adults (1-4) and number of children (0-4)  -->
+            <h3>Choose Number of Guests</h3>
+            <form id="numbrtOfGuests">
+                <label for="adults">Adults:</label>
+                <input type="number" name="adults" id="adults" min="1" max="4">
+
+                <label for="children">Children:</label>
+                <input type="number" name="children" id="children" min="0" max="4">
+                <br>
+
+
+            </form>
+            <br>
+        </section>
+
+        <section id="discounts">
+            <!-- radio buttons that specify: None, AAA/Senior (10%), and Military (20%) -->
+            <h3>Discounts</h3>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                <label class="form-check-label" for="flexRadioDefault4">
+                    AAA/Senior (10%)
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                <label class="form-check-label" for="flexRadioDefault5">
+                    Military (20%)
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                <label class="form-check-label" for="flexRadioDefault6">
+                    None
+                </label>
+            </div>
+
+
+
+            <br>
+        </section>
 
     </main>
 
